@@ -20,8 +20,8 @@
 :root {
   --color-default: #424242;
   /* --color-primary: #9CDCAA; */
-  --color-primary: #00E676;
-  --color-primary-dark: #00b248;
+  --color-primary: #00bfa5;
+  --color-primary-dark: #009688;
   /* --color-primary: #60d394; */
   --color-dark: #343a40;
   --color-white: #f8f9fa;
@@ -598,6 +598,7 @@ section {
 
   .mobile-nav-show {
     color: rgba(255, 255, 255, 0.6);
+    color: var(--color-primary);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
