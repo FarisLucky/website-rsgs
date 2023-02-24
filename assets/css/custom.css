@@ -1,0 +1,389 @@
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hero {
+        height: 60vh;
+        padding: 0;
+    }
+
+    .cs-carousel {
+        margin-bottom: 2rem;
+    }
+
+    .welcome-txt {
+        position: absolute;
+        top: 50%;
+        z-index: 999;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+h4.title {
+    color: white;
+}
+
+#header {
+    height: 86px;
+}
+
+#topbar {
+    /* background-color: rgba(102, 255, 166, .2); */
+    background-color: rgb(223, 251, 236, .4);
+    height: 49px;
+}
+
+#topbar a,
+#topbar span {
+    color: rgba(44, 62, 80);
+}
+
+#search_dokter {
+    padding-top: 0px;
+    margin-top: -3rem;
+}
+
+.navbar ul li a::before {
+    background-color: var(--color-primary);
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border: none;
+}
+
+.search_dokter_label strong {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.search_dokter_label p {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    color: #bdc3c7;
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: #5d5d5d;
+    background-color: #fff;
+    border-color: var(--color-primary);
+    border-width: 2px;
+    box-shadow: none;
+}
+
+.card-header {
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    border: none;
+}
+
+.card-header::before {
+    content: "";
+    background: #dfdfdf;
+    height: 1px;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* .input-group-text:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: none;
+} */
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    color: #626976;
+    pointer-events: none;
+    font-size: 1.2em;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+    transition: all .3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border: none;
+}
+
+/* 
+
+Css Untuk main page
+
+
+*/
+
+--root {
+    --font-black: #264653;
+}
+
+section {
+    padding: 60px 0 30px 0;
+}
+
+.cs-header {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cs-header h2 {
+    /* font-size: 36px; */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: left;
+    color: var(--font-black);
+}
+
+.cs-header p {
+    font-size: 16px;
+    /* font-weight: 500; */
+    text-align: left;
+    color: var(--color-primary);
+    text-indent: 16px;
+}
+
+.card-berita {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    /* box-shadow: 0px 2px 25px rgb(0 0 0 / 10%); */
+}
+
+.card-desc {
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-tgl {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: normal;
+    margin: 10px 0 0 0;
+    color: #495057;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin: 10px 0;
+    line-height: normal;
+    color: #495057;
+    margin: 16px 0 0 0;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: justify;
+    text-indent: 10px;
+    margin: 16px 0 0 0;
+}
+
+/* 
+
+Client Area
+
+*/
+
+#clients {
+    margin-top: 3rem;
+    /* background-color: rgba(219, 234, 215, .3); */
+    background-color: var(--color-dark);
+}
+
+#clients .cs-header h4 {
+    color: var(--color-white);
+}
+
+#clients .swiper-wrapper .swiper-slide {
+    background-color: var(--color-white);
+    padding: .7rem 1rem;
+    border-radius: 5px;
+}
+
+.swiper-slide img {
+    width: 80px;
+}
+
+/* 
+
+Client Area
+
+*/
+
+#intro {
+    margin: 3rem 0;
+}
+
+/*
+
+LAYANAN KAMI
+
+*/
+
+#layanan_kami {
+    /* background-color: rgba(255, 214, 186, .2); */
+    /* background-color: rgb(133, 255, 189); */
+    background-image: linear-gradient(45deg, rgba(133, 255, 189, .2) 0%, #ffffff 100%);
+
+    /* background-color: rgba(223, 251, 236, .3); */
+    border-radius: 5px;
+}
+
+.card-layanan {
+    transition: all .5s;
+    transform: translateX(0);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.card-layanan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--color-primary);
+    transition: all .5s;
+    transform: translateX(-100%);
+}
+
+.card-layanan:hover::before {
+    transform: translateX(0);
+}
+
+.card-layanan:hover .readmore {
+    color: white;
+    font-weight: bold;
+}
+
+/* 
+SPESIALIS KAMI
+*/
+
+#spesialis_kami {
+    background-color: transparent;
+}
+
+.card-spesialis {
+    padding: 10px 16px;
+    /* background: #fff; */
+    height: 100%;
+    border-radius: 13px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    /* background-color: #9CDCAA; */
+    color: var(--color-white);
+}
+
+.card-spesialis .card-body .icon {
+    position: relative;
+    display: inline-block;
+    margin-right: 1.5rem;
+    z-index: 2;
+    padding: .2rem;
+    margin-bottom: 5px;
+}
+
+/* .card-spesialis:nth-child(1) {
+    background-color: #BFB2F3;
+}
+
+.card-spesialis:nth-child(2) {
+    background-color: #96CAF7;
+}
+
+.card-spesialis:nth-child(3) {
+    background-color: #9CDCAA;
+}
+
+.card-spesialis:nth-child(4) {
+    background-color: #E5E1AB;
+}
+
+.card-spesialis:nth-child(5) {
+    background-color: #F3C6A5;
+}
+
+.card-spesialis:nth-child(7) {
+    background-color: #F8A3A8;
+} */
+
+/* .card-spesialis .card-body .icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    z-index: -1;
+    padding: 1.4rem;
+} */
+
+.card-spesialis .card-body h3 {
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.card-spesialis .card-body::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    height: 3px;
+    width: 0;
+    background: var(--color-primary);
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.card-spesialis .card-body:hover::before {
+    width: 90%;
+}
+
+.card-spesialis .img-icon {
+    height: 60px;
+    width: 60px;
+}
+
+/*
+    CARI DOKTER
+*/
