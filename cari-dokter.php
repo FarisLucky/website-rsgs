@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Index</title>
+  <title>RSGS - Cari Dokter</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,82 +44,37 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section><!-- End Top Bar -->
-
-  <header id="header" class="header d-flex align-items-center">
-
-    <div class="container container-xl d-flex align-items-center justify-content-between">
-      <a href="index.php" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>RSGS<span>.</span></h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Layanan</a></li>
-          <li><a href="#about">Cari Dokter</a></li>
-          <li><a href="#services">Cari Pasien</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+  <?php
+  require_once('header.php')
+  ?>
 
   <main id="main">
-
+    <section id="pamflet_header" class="pamflet-header">
+      <div class="container position-relative cvr-header">
+        <h3>Cari Dokter</h3>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem libero impedit labore, nam neque quae obcaecati numquam, sapiente ipsam quam atque quisquam. Maxime animi laudantium maiores error, aliquid voluptatum.</p>
+      </div>
+    </section>
     <!-- ======= About Us Section ======= -->
     <section id="cari-dokter" class="cari-dokter">
       <div class="container" data-aos="fade-up">
-
-        <div class="cs-header">
-          <h4>Cari Dokter</h4>
-          <p class="txt-subtitle">Silahkan Cari Dokter</p>
-        </div>
         <div class="row">
           <div class="col-md-3">
-            <div class="card">
+            <div class="card mb-4">
               <div class="card-body">
                 <form action="" method="post">
                   <div class="mb-2">
+                    <label for="" class="form-label">Nama Dokter</label>
                     <input type="text" class="form-control" name="cari_dokter" placeholder="Ketik Nama Dokter">
                   </div>
-                  <div class="mb-2">
+                  <div class="mb-3">
                     <label for="" class="form-label">Pilih Spesialis</label>
                     <select class="form-select" name="type_spesialis">
                       <option value="">Pilih Spesialis</option>
@@ -127,7 +84,9 @@
                     <button type="submit" class="btn btn-primary w-100">
                       <i class="fas fa-search"></i> Cari
                     </button>
-                    <button type="reset" class="btn btn-secondary w-100">
+                  </div>
+                  <div class="mb-2">
+                    <button type="reset" class="btn btn-outline-secondary w-100">
                       <i class="fas fa-undo-alt"></i> Reset
                     </button>
                   </div>
@@ -141,16 +100,19 @@
                 <?php
                 for ($i = 1; $i <= 4; $i++) :
                 ?>
-                  <div class="col-md-3">
-                    <div class="card card-berita">
+                  <div class="col-6 col-md-3">
+                    <div class="card card-dokter">
                       <div class="card-body">
                         <img src="assets/img/bg-1.jpg" alt="" class="card-img">
-                        <div class="d-flex flex-column card-desc">
-                          <span class="card-tgl">20 Januari 2022</span>
-                          <span class="card-title">Layanan Jantung Anak</span>
-                          <span class="card-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-                            quaerat enim aliquam eum vel sint atque repudiandae odit? Provident dolor voluptatem voluptatibus
-                            explicabo fugit. Odio iure beatae dolores unde tempora!</span>
+                        <div class="d-flex flex-column py-2">
+                          <span class="card-subtitle dr-type text-primary indent-0">
+                            <i class="fas fa-stethoscope" style="margin-right: 3px;"></i>Dokter Umum
+                          </span>
+                          <span class="card-title dr-name">dr. Susanti Sugianto</span>
+                          <p class="dr-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                          <div class="mt-3">
+                            <button class="btn btn-primary-2 w-100">Buat Janji</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -168,77 +130,9 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
-          </p>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container mt-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+  <?php
+  require_once('footer.php')
+  ?>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

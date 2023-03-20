@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Index</title>
+  <title>RSGS-Beranda</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,8 +16,8 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -42,62 +42,7 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section><!-- End Top Bar -->
-
-  <header id="header" class="header d-flex align-items-center">
-
-    <div class="container container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>RSGS<span>.</span></h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Layanan</a></li>
-          <li><a href="#about">Cari Dokter</a></li>
-          <li><a href="#services">Cari Pasien</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+  <?php require_once('header.php') ?>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
@@ -105,12 +50,15 @@
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-12 p-0">
           <div class="owl-carousel owl-theme">
-            <div class="item">
-              <img src="assets/img/bg-1.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-            </div>
-            <div class="item">
-              <img src="assets/img/bg-2.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-            </div>
+            <?php for ($i = 1; $i < 3; $i++) : ?>
+              <div class="item img-item">
+                <div class="carousel-cover container">
+                  <h3 class="carousel-title">Rumah Sakit <span class="carousel-gs">Graha Sehat</span></h3>
+                  <p class="carousel-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio repellat placeat ipsum id perferendis</p>
+                </div>
+                <img src="assets/img/bg-1.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+              </div>
+            <?php endfor; ?>
           </div>
         </div>
         <!-- <div
@@ -150,19 +98,21 @@
                   <!-- <span class="input-group-text">
                     <i class="fas fa-search"></i>
                   </span> -->
-                  <input type="search" name="q_dokter" id="q_dokter" class="form-control search-dokter" placeholder="Nama Dokter">
+                  <input type="search" name="q_dokter" id="q_dokter" class="form-control input-search-dokter" placeholder="Nama Dokter">
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="mb-2">
-                  <select class="form-select">
+                  <select class="form-select input-select-dokter">
                     <option value="">Pilih Spesialis</option>
+                    <option value="">Gigi</option>
+                    <option value="">Saraf</option>
                   </select>
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="mb-2">
-                  <button type="submit" class="btn btn-primary w-100">
+                  <button type="submit" class="btn w-100 btn-search-dokter">
                     Search
                     <i class="fas fa-arrow-right"></i>
                   </button>
@@ -178,6 +128,103 @@
 
   <main id="main">
 
+    <section id="spesialis_kami">
+      <div class="container">
+        <div class="cs-header">
+          <h3>Spesialis Kami</h3>
+          <p>
+            Rumah sakit memiliki dokter spesialis
+          </p>
+        </div>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <?php
+          for ($i = 1; $i <= 6; $i++) :
+          ?>
+            <div class="col-lg-3 col-md-6">
+              <div class="position-relative card-spesialis">
+                <div class="card-body">
+                  <div class="icon">
+                    <!-- <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/000000/external-baby-pregnancy-amp-maternity-icongeek26-outline-icongeek26-1.png" class="img-icon" /> -->
+                    <img src="assets/img/icons/icons8-baby-64.png" alt="" class="img-icon">
+                  </div>
+                  <h3>Spesialis <span class="text-primary">Anak</span></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+          <?php
+          endfor;
+          ?>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+        <div class="cs-header mb-0">
+          <h4>Client Asuransi Kami</h4>
+        </div>
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="intro" class="call-to-action">
+      <div class="container text-center" data-aos="zoom-out">
+        <h3>Profil RS <span class="text-primary">Graha Sehat</span></h3>
+        <a href="https://www.youtube.com/watch?v=gg5gZDviOVo" class="glightbox play-btn"></a>
+        <p>Video profil perkenala graha sehat.
+        </p>
+        <!-- <a class="cta-btn" href="#">Play</a> -->
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Our Services Section ======= -->
+    <section id="layanan_kami" class="services">
+      <div class="cs-header">
+        <div class="container" data-aos="fade-up">
+          <h2>Layanan Kami</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, laborum. Repudiandae consequatur voluptatem.</p>
+        </div>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 layanan-card-layout" data-aos="fade-up" data-aos-delay="100">
+          <?php
+          for ($i = 1; $i <= 8; $i++) :
+          ?>
+            <div class="col-6 col-lg-3 col-md-6">
+              <div class="service-item position-relative card-layanan">
+                <div class="icon">
+                  <img src="assets/img/icons/icons8-dental-checkup-50.png" alt="">
+                </div>
+                <h3>Layanan Poli Mata</h3>
+                <p>Layanan Operasi Katarak menggunakan teknik <strong>PHAECO EMULSIFIKASI</strong></p>
+                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+          <?php
+          endfor;
+          ?>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Services Section -->
+
     <!-- ======= About Us Section ======= -->
     <section id="berita" class="berita">
       <div class="container" data-aos="fade-up">
@@ -192,7 +239,7 @@
             <?php
             for ($i = 1; $i <= 4; $i++) :
             ?>
-              <div class="col-md-3">
+              <div class="col-6 col-md-3">
                 <div class="card card-berita">
                   <div class="card-body">
                     <img src="assets/img/bg-1.jpg" alt="" class="card-img">
@@ -215,110 +262,7 @@
       </div>
     </section><!-- End About Us Section -->
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-out">
-        <div class="cs-header mb-0">
-          <h4>Client Asuransi Kami</h4>
-        </div>
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-        </div>
 
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section id="intro" class="call-to-action">
-      <div class="container text-center" data-aos="zoom-out">
-        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
-        <h3>Call To Action</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <a class="cta-btn" href="#">Call To Action</a>
-      </div>
-    </section><!-- End Call To Action Section -->
-
-    <!-- ======= Our Services Section ======= -->
-    <section id="layanan_kami" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="cs-header">
-          <h2>Layanan Kami</h2>
-          <p>Rumah Sakit Graha Sehat</p>
-        </div>
-
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
-          <?php
-          for ($i = 1; $i <= 8; $i++) :
-          ?>
-            <div class="col-lg-3 col-md-6">
-              <div class="service-item position-relative card-layanan">
-                <div class="icon">
-                  <i class="bi bi-activity"></i>
-                </div>
-                <h3>Layanan Poli Mata</h3>
-                <p>Layanan Operasi Katarak menggunakan teknik <strong>PHAECO EMULSIFIKASI</strong></p>
-                <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div><!-- End Service Item -->
-          <?php
-          endfor;
-          ?>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Services Section -->
-
-    <section id="spesialis_kami">
-      <div class="container">
-        <div class="cs-header">
-          <h3>Spesialis Kami</h3>
-          <p>
-            Rumah sakit memiliki dokter spesialis
-          </p>
-        </div>
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
-          <?php
-          $colors = [
-            "#BFB2F3",
-            "#96CAF7",
-            "#9CDCAA",
-            "#E5E1AB",
-            "#F3C6A5",
-            "#F8A3A8",
-          ];
-          for ($i = 1; $i <= 6; $i++) :
-          ?>
-            <div class="col-lg-3 col-md-6">
-              <div class="position-relative card-spesialis" style="background-color: #343a40;">
-                <div class="card-body">
-                  <div class="icon">
-                    <!-- <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/000000/external-baby-pregnancy-amp-maternity-icongeek26-outline-icongeek26-1.png" class="img-icon" /> -->
-                    <img src="assets/img/icons/icons8-baby-64.png" alt="" class="img-icon">
-                  </div>
-                  <h3>Spesialis Anak</h3>
-                  <span></span>
-                </div>
-              </div>
-            </div><!-- End Service Item -->
-          <?php
-          endfor;
-          ?>
-        </div>
-      </div>
-    </section>
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
@@ -509,77 +453,9 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
-          </p>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container mt-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+  <?php
+  require_once('footer.php')
+  ?>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
