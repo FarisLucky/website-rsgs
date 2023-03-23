@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>RSGS - Cari Dokter</title>
+  <title>RSGS - Visi Misi</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,7 +51,7 @@
   <main id="main">
     <section id="pamflet_header" class="pamflet-header">
       <div class="container position-relative cvr-header">
-        <h3>Cari Dokter</h3>
+        <h3 class="pb-2">Sejarah RS Graha Sehat</h3>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -59,67 +59,26 @@
             <li class="breadcrumb-item active" aria-current="page">Data</li>
           </ol>
         </nav>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem libero impedit labore, nam neque quae obcaecati numquam, sapiente ipsam quam atque quisquam. Maxime animi laudantium maiores error, aliquid voluptatum.</p>
       </div>
     </section>
     <!-- ======= About Us Section ======= -->
-    <section id="cari-dokter" class="cari-dokter">
+    <section id="sejarah" class="sejarah">
       <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-4">
-              <div class="card-body">
-                <form action="" method="post">
-                  <div class="mb-2">
-                    <label for="" class="form-label">Nama Dokter</label>
-                    <input type="text" class="form-control" name="cari_dokter" placeholder="Ketik Nama Dokter">
-                  </div>
-                  <div class="mb-3">
-                    <label for="" class="form-label">Pilih Spesialis</label>
-                    <select class="form-select" name="type_spesialis">
-                      <option value="">Pilih Spesialis</option>
-                    </select>
-                  </div>
-                  <div class="mb-2 text-center flex-row gap-1">
-                    <button type="submit" class="btn btn-primary w-100">
-                      <i class="fas fa-search"></i> Cari
-                    </button>
-                  </div>
-                  <div class="mb-2">
-                    <button type="reset" class="btn btn-outline-secondary w-100">
-                      <i class="fas fa-undo-alt"></i> Reset
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-9">
-            <div class="cs-body">
-              <div class="row gy-4">
-                <?php
-                for ($i = 1; $i <= 4; $i++) :
-                ?>
-                  <div class="col-6 col-md-3">
-                    <div class="card card-dokter">
-                      <div class="card-body">
-                        <img src="assets/img/bg-1.jpg" alt="" class="card-img">
-                        <div class="d-flex flex-column py-2">
-                          <span class="card-subtitle dr-type indent-0">
-                            <i class="fas fa-stethoscope" style="margin-right: 3px;"></i>Dokter Umum
-                          </span>
-                          <span class="card-title dr-name">dr. Susanti Sugianto</span>
-                          <p class="dr-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                          <div class="mt-3">
-                            <button class="btn btn-primary-2 w-100">Buat Janji</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <?php
-                endfor;
-                ?>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body py-2 px-3">
+                <p>
+                  Peran Rumah Sakit Graha Sehat Kraksaan terhadap pelayanan kesehaan masyarakat bermula dari pendirian suatu apotek yang berdiri sejak tahun 1998. Selanjutnya, pelayanan apotek tersebut dikembangkan dengan mendirikan Praktek Bersama Dokter Spesialis, dan pendirian laboratorium klinik "Sehat" pada tahun 2002 diatas lahan seluas 300m2. Usaha berkembang semakin pesat dan pelayanan kesehatan semakin dibutuhkan masyarakat. Maka pada tanggal 13 Desember 2003 diresmikan Klinik Umum dan Bersalin (Klinik Sehat) oleh Bapak Bupati Kab. Probolinggo yang menjabat. Saat itu Klinik Sehat merupakan satu-satunya klinik umum di Kabupaten Probolinggo.
+                </p>
+                <p>Klinik Sehat yang dikelola oleh CV Graha Sehat Lestari mendapatkan izin Operasional tetap dari Dinas Kesehatan Provinsi Jawa Timur. Status kepemilikan Klinik Sehat kemudian diubah menjadi PT Graha Sehat Lestari Kraksaan sebagai persyaratan pengajuan menaikkan status klinik menjadi Rumah Sakit Umum Graha Sehat Kraksaan, berdasarkan izin Operasional tetap yang diterbitkan oleh Menteri Kesehatan RI per tanggal 27 Agustus 2008.
+                </p>
+                <p>
+                  Sejalan dengan upaya meningkatkan kualitas pelayanan Rumah Sakit Graha Sehat, dilakukan serangkaian pembenahan manajemen dan pembangunan fisik (gedung) secara menyeluruh, sehingga pada tahun 2012 Rumah Sakit Graha Sehat telah terakreditasi sebagai Rumah sakit swasta pertama di Kraksaan Kabupaten Probolinggo dan ditetapkan sebagai Rumah Sakit Umum tipe C.
+                </p>
+                <p>
+                  Upaya peningkatan mutu dan keselamatan pasien akan terus menerus dikembangkan oleh Rumah Sakit Graha Sehat yang berlokasi di Jalan Raya Panglima Sudirman Nomor 2 Kraksaan, Kabupaten Probolinggo dengan memberikan pelayanan kesehatan rawat jalan, gawat darurat, rawat inap dan pelayanan penunjang medis serta pelayanan penunjang non medis. Upaya ini akan senantiasa dilakukan untuk melayani masyarakat yang membutuhkan pelayanan kesehatan dalam mewujudkan visi dan misi Rumah Sakit Graha Sehat sebagai Rumah Sakit pilihan masyarakat di Kabupaten Probolinggo.
+                </p>
               </div>
             </div>
           </div>

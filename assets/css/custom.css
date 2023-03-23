@@ -401,9 +401,8 @@ Client Area
 */
 
 #intro {
-    margin: -4rem 0;
     z-index: 10;
-    padding: 10rem 0 6rem 0;
+    padding: 8rem 0 6rem 0;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
 }
@@ -554,18 +553,22 @@ PAMFLET HEADER
 .pamflet-header {
     background-color: var(--color-primary);
     padding: 30px;
+    height: 37vh;
+    vertical-align: middle;
+    margin-top: auto;
+    position: relative;
 }
 
 .pamflet-header h3 {
     font-size: 28px;
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .pamflet-header p {
     font-size: 16px;
     font-weight: 500;
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .breadcrumb .breadcrumb-item a {
@@ -577,7 +580,9 @@ PAMFLET HEADER
 }
 
 .card-subtitle.dr-type {
+    color: var(--color-dark);
     font-size: 11px;
+    font-weight: 500;
 }
 
 .card-title.dr-name {
@@ -590,4 +595,127 @@ PAMFLET HEADER
 
 button[type=reset] {
     border: none;
+}
+
+.about-me p {
+    font-size: 14px;
+    margin-left: 2px;
+    text-indent: .8rem;
+    text-align: justify;
+    letter-spacing: normal;
+}
+
+.about-me h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.pamflet-header.pamflet-sejarah {
+    background-image: url('../img/bg-1.jpg');
+    background-size: cover;
+}
+
+.pamflet-header.pamflet-sejarah::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 15;
+}
+
+.cvr-img {
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cvr-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    transform: skew(24deg) translate(5px, 0px);
+    z-index: -1;
+}
+
+.cvr-img .cvr-img-bg::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 5;
+}
+
+.cvr-img-2 {
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cvr-img-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cvr-img-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-second);
+    transform: skew(24deg) translate(5px, 0px);
+    z-index: -1;
+}
+
+.cvr-header {
+    z-index: 16;
+}
+
+.txt-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 1rem;
+}
+
+.txt-title::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 10%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+    z-index: 3;
+}
+
+.ol-misi {
+    padding: .7rem;
+    margin: 0;
+}
+
+.ol-misi li {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-header {
+    padding-bottom: 30px;
 }
